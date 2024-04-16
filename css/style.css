@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
+/* permet de ralentir quand on remonte la page */
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  font-family: "Roboto Slab", serif;
+}
+
+/* ----HEADER----- */
+/* limite la taille de l'image */
+header img {
+  min-width: 50rem;
+  max-width: 98.5rem;
+}
+/* position du h1 dans l'image */
+header h1 {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 6rem;
+  top: 17rem;
+}
+
+/* ----NAV----- */
+/* bouge en meme temps que le scroll de la page */
+nav {
+  position: fixed;
+  top: 0;
+  background-color: rgba(193, 193, 193, 0.7);
+
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
+}
+nav ul li a {
+  font-size: 150%;
+  color: white;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+/* -----MAIN------- */
+/* decalage avec le header */
+main {
+  margin-top: 3rem;
+}
+
+main article#folio ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* disposition des images folio */
+main article#folio li {
+  flex: 1 0 17rem;
+}
+article#folio li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* disposition des images logos */
+main article#logos ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main article#logos li {
+  flex: 1 1 17rem;
+}
+article#logos li img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* mettre en colone par 3 et decalage sur le coté gauche */
+main article#services p:last-child {
+  column-count: 3;
+  margin-left: 2rem;
+}
+
+/* position des elements */
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 5rem 7rem;
+}
+footer span {
+  display: flex;
+}
+footer img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
