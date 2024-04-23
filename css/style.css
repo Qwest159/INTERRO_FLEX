@@ -28,7 +28,6 @@ nav {
   position: fixed;
   top: 0;
   background-color: rgba(193, 193, 193, 0.7);
-
   width: 100%;
 }
 nav ul {
@@ -82,6 +81,7 @@ article#logos li img {
 main article#services p:last-child {
   column-count: 3;
   margin-left: 2rem;
+  text-align: justify;
 }
 
 /* position des elements */
